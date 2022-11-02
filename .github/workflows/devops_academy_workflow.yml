@@ -9,24 +9,14 @@ on:
   workflow_dispatch:
 
 jobs:
-  # initiate:
-  #   #TODO parse a file to review job
-  #   # command from shell, we want to be able to get it within devOpsAcademy
-  #   runs-on: ubuntu-latest
-  #   outputs:
-  #     listdir: ${{ steps.initial.outputs.listdir }}
-  #   steps:
-  #     - id: initial
-  #       run: |
-  #         echo "listdir=$(ls -R)" >> $GITHUB_OUTPUT
-
   review-exercise1:
     runs-on: ubuntu-latest
-    # needs: initiate
     steps:
     - name: Review Exercises 1 
       uses: devopsacademyau/academy2/exercise1@denis
-      # with:
-      #   listdir: ${{ needs.initiate.outputs.listdir }}
-      #   ref: v0
-     
+
+  review-exercise2:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Review Exercises 2
+      uses: devopsacademyau/academy2/exercise2@denis
