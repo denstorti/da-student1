@@ -14,9 +14,5 @@ jobs:
     steps:
     - name: Review Exercises 1 
       uses: devopsacademyau/academy2/exercise1@denis
-
-  review-exercise2:
-    runs-on: ubuntu-latest
-    steps:
     - name: Review Exercises 2
       uses: devopsacademyau/academy2/exercise2@denis
